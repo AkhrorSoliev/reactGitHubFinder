@@ -2,7 +2,7 @@ import React from 'react'
 import UserItems from './UserItems'
 import Spinner from '../layout/Spinner'
 
-const Users = ({ users, loading }) => {
+const Users = ({ loading, users }) => {
   if (loading) {
     return (
       <div

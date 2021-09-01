@@ -33,6 +33,14 @@ export default class Search extends React.Component {
           <button className="btn btn-primary w-100 text-white mt-3">
             Search
           </button>
+          {this.props.showClear && (
+            <button
+              className="btn btn-danger w-100 mt-3"
+              onClick={this.props.clearUsers}
+            >
+              Clear
+            </button>
+          )}
         </form>
       </div>
     )
