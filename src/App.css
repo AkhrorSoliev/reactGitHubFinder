@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.text-center {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.serachLabel {
+  text-align: left;
+  display: block;
+  margin: 1rem auto 0;
+}
+
+@media (max-width: 500px) {
+  .widhtMedia {
+    width: 100% !important;
+  }
+}
