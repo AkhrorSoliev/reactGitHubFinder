@@ -13,8 +13,12 @@ export default class Search extends React.Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    this.props.searchUsers(this.state.text)
-    this.setState({ text: '' })
+    if (this.state.text === '') {
+      this.props.setAlert(' Plase enter something...!', 'danger')
+    } else {
+      this.props.searchUsers(this.state.text)
+      this.setState({ text: '' })
+    }
   }
 
   render() {
